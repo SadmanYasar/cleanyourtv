@@ -1,4 +1,6 @@
 tools/venv/
+tools/venv
+
 tools/adbkey/
 __pycache__/
 launcher/.gradle/
@@ -19,3 +21,4 @@ traces/
 *.aab
 launcher/hs_err_pid*.log
 launcher/replay_pid*.log
+scratch/

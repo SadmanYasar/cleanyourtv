@@ -60,8 +60,12 @@
         android:ellipsize="end"
         android:alpha="0"
         android:translationY="-6dp"
-        android:textColor="#F2FFFFFF"
+        android:textColor="#FFFFFFFF"
         android:textSize="14sp"
         android:fontFamily="@string/font_medium"
-        android:letterSpacing="0.02" />
+        android:letterSpacing="0.02"
+        android:shadowColor="#E6000000"
+        android:shadowDx="0"
+        android:shadowDy="2"
+        android:shadowRadius="5" />
 </FrameLayout>

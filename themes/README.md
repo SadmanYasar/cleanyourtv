@@ -20,6 +20,8 @@ powershell -ExecutionPolicy Bypass -File tools\theme.ps1 -TvHost 192.168.1.50 th
 | `glass/` | Dark navy wallpaper with soft teal and violet light, the cinematic top shelf, a frosted-glass dock, icon-only buttons and the focus glow in the app's colour, gliding without overshoot | <img src="glass/screenshot.jpg" width="320" alt="glass theme"> |
 | `scenes/` | 14 dark illustrated landscapes in `wallpapers/`, a new one every hour; drawn from code by `tools/scenes_wallpapers.py` | <img src="scenes/screenshot.jpg" width="320" alt="scenes theme"> |
 | `six-columns/` | Six smaller tiles per row and one grid row visible under the dock | <img src="six-columns/screenshot.jpg" width="320" alt="six-columns theme"> |
+| `wii-u/` | The Nintendo Wii U menu: soft silver-white gradient with floating 3D buttons, 5 columns of squircle glass tiles, and a cyan focus glow | <img src="wii-u/screenshot.jpg" width="320" alt="wii-u theme"> |
+| `frutiger-aero/` | 2000s Frutiger Aero skeuomorphism: vibrant rolling nature hills, morning dew, bubbles, 3D acrylic glass dock shelf, and glossy gel pebble tiles with cyan glow | <img src="frutiger-aero/screenshot.jpg" width="320" alt="frutiger-aero theme"> |
 
 Every theme folder has a `screenshot.jpg` of Home with that theme on a real TV. `tools/theme.sh` never
 pushes it; it is only here so you can see a theme before you try it.

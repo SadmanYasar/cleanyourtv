@@ -1,0 +1,20 @@
+{
+  "dock_apps": [
+    "com.google.android.youtube.tv",
+    "com.netflix.ninja",
+    "com.tcl.browser",
+    "com.google.android.play.games"
+  ],
+  "columns": 5,
+  "background_color": "#E2E7EA",
+  "wallpaper": true,
+  "wallpaper_true_color": true,
+  "dock_row": true,
+  "dock_opacity": 75,
+  "wallpaper_dim": 12,
+  "always_show_names": true,
+  "accent_color": "#00C3E3",
+  "animations": true,
+  "focus_overshoot": true,
+  "advanced_effects": true
+}

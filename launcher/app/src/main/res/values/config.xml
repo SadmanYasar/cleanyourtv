@@ -17,10 +17,10 @@
 
     <!-- Apps pinned to the dock row at the bottom, in this order. Missing apps are skipped. -->
     <string-array name="dock_apps">
-        <item>com.netflix.ninja</item>
-        <item>com.amazon.amazonvideo.livingroom</item>
         <item>com.google.android.youtube.tv</item>
-        <item>in.startv.hotstar</item>
+        <item>com.netflix.ninja</item>
+        <item>com.tcl.browser</item>
+        <item>com.google.android.play.games</item>
     </string-array>
     <!-- With fewer dock_apps than columns (or a dock app that is not installed), the free dock slots take
          the first grid apps, so the dock never shows a gap. false leaves them empty (#162); a theme can
@@ -34,7 +34,7 @@
     </string-array>
 
     <!-- The TV's Live TV / tuner app, offered at the end of the Inputs menu. Leave empty to omit. -->
-    <string name="live_tv_package" translatable="false">com.mediatek.wwtv.tvcenter</string>
+    <string name="live_tv_package" translatable="false"></string>
 
     <!-- Open the Live TV app above the first time Home comes up after the TV is switched on, for sets that are
          mostly used for broadcast TV. Once per boot: Home after that stays Home. Can also be set with
@@ -62,9 +62,11 @@
     <!-- A tile's name instead of the app's own: "package=Name". It also shows above the dock. -->
     <string-array name="app_labels">
     </string-array>
-    <!-- A tile's artwork instead of the app's banner: "package=drawable", a banner_* drawable bundled with the
-         launcher (res/drawable). banner_tv is a magenta field with the Live TV glyph. -->
     <string-array name="app_banners">
+        <item>com.google.android.youtube.tv=banner_youtube</item>
+        <item>com.netflix.ninja=banner_netflix</item>
+        <item>com.tcl.browser=banner_browser</item>
+        <item>com.google.android.play.games=banner_games</item>
     </string-array>
 
     <!-- TVs with no TvInputManager have no HDMI list to read, but their own source-selection panel
@@ -197,7 +199,7 @@
     <!-- The dock band as light frosted glass, like the Inputs, Wi-Fi and Settings pills, so a sky or wallpaper shows
          through it. false (the default) keeps the solid near-black band, or the cinematic shelf's dark glass. Can
          also be set with "dock_glass": true in a theme's config.json. -->
-    <bool name="dock_glass">false</bool>
+    <bool name="dock_glass">true</bool>
     <!-- A reorder button (two arrows) in the top bar. Off by default: reordering is also in the Settings
          button's long-press menu, so it needs no extra button on screen. -->
     <bool name="reorder_button">false</bool>
@@ -218,10 +220,10 @@
     <bool name="show_inputs_pill">true</bool>
     <!-- Names under every tile, not only the focused one: unfocused names stay dimmed, the focused one is full white.
          With dock_row the band grows down to hold the dock's names too. -->
-    <bool name="always_show_names">false</bool>
+    <bool name="always_show_names">true</bool>
     <!-- Wallpapers decode as RGB_565 (2 bytes a pixel, 4 MB at 1080p), which bands dark gradients such as a night
          sky, most of all under wallpaper_dim. true decodes them in 32-bit colour: 8 MB, for TVs with 2 GB or more. -->
-    <bool name="wallpaper_true_color">false</bool>
+    <bool name="wallpaper_true_color">true</bool>
     <!-- Rotating wallpapers: show each picture's name under the top-right buttons, from a captions.txt next to the
          pictures in wallpapers/ ("01-dusk.jpg<TAB>Dusk over the peaks", one per line). A picture without a line
          shows no name. Can also be set with "wallpaper_captions": true in a theme's config.json. -->
@@ -245,7 +247,7 @@
 
     <!-- Basic motion is on; advanced effects are opt-in in the launcher's own Settings screen. -->
     <bool name="animations">true</bool>
-    <bool name="advanced_effects">false</bool>
+    <bool name="advanced_effects">true</bool>
 
     <!-- Optional Default-home tile; keep this key for existing themes and tile-ordering work.
          Off by default because the chooser is also available from launcher settings. -->
@@ -295,7 +297,7 @@
     <!-- The glow behind the dock in the focused app's colour (red for YouTube, blue for Prime Video). false keeps
          only background_color or the wallpaper behind everything. Can also be set with "ambient_glow": false in a
          theme's config.json. -->
-    <bool name="ambient_glow">true</bool>
+    <bool name="ambient_glow">false</bool>
     <!-- The focus highlight glows in the focused app's colour on every tile, as the cinematic shelf does for the
          dock, without cinematic_home. Can also be set with "app_glow": true in a theme's config.json. -->
     <bool name="app_glow">false</bool>

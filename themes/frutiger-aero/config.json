@@ -1,0 +1,30 @@
+{
+  "dock_apps": [
+    "com.google.android.youtube.tv",
+    "com.netflix.ninja",
+    "com.tcl.browser",
+    "com.google.android.play.games"
+  ],
+  "app_banners": [
+    "com.google.android.youtube.tv=banner_youtube",
+    "com.netflix.ninja=banner_netflix",
+    "com.tcl.browser=banner_browser",
+    "com.google.android.play.games=banner_games"
+  ],
+  "columns": 4,
+  "background_color": "#1A1A1A",
+  "wallpaper": true,
+  "wallpaper_true_color": true,
+  "wallpaper_dim": 8,
+  "dock_row": true,
+  "dock_glass": true,
+  "dock_opacity": 75,
+  "dock_title": true,
+  "always_show_names": true,
+  "accent_color": "#00E5FF",
+  "ambient_glow": false,
+  "app_glow": false,
+  "animations": true,
+  "focus_overshoot": true,
+  "advanced_effects": true
+}

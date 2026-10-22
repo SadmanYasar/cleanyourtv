@@ -28,6 +28,8 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.ColorDrawable;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.GradientDrawable;
+import android.media.AudioAttributes;
+import android.media.SoundPool;
 import android.media.tv.TvContract;
 import android.media.tv.TvInputInfo;
 import android.media.tv.TvInputManager;
@@ -566,8 +568,9 @@ public class MainActivity extends Activity implements AppAdapter.TileListener {
                 // Critically damped: glides straight onto the tile without swinging past it.
                 s.setSpring(new SpringForce().setStiffness(advancedEffects ? 520f : 440f).setDampingRatio(1f));
             } else {
-                s.setSpring(new SpringForce().setStiffness(advancedEffects ? 320f : 260f)
-                        .setDampingRatio(advancedEffects ? 0.76f : 0.58f));
+                // Frutiger Aero confident weighted spring (stiffness: 180, damping ratio: 0.85)
+                s.setSpring(new SpringForce().setStiffness(advancedEffects ? 180f : 200f)
+                        .setDampingRatio(advancedEffects ? 0.85f : 0.80f));
             }
         }
 

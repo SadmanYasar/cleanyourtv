@@ -1,24 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:state_focused="true">
-        <shape android:shape="rectangle">
-            <solid android:color="#F5FFFFFF" />
-            <corners android:radius="21dp" />
-        </shape>
+        <layer-list>
+            <item>
+                <shape android:shape="rectangle">
+                    <gradient
+                        android:angle="270"
+                        android:startColor="#FFFFFFFF"
+                        android:centerColor="#FFE6F2FA"
+                        android:endColor="#FFCCE4F5" />
+                    <corners android:radius="21dp" />
+                    <stroke android:width="1.8dp" android:color="#00E5FF" />
+                </shape>
+            </item>
+            <item android:bottom="20dp">
+                <shape android:shape="rectangle">
+                    <gradient
+                        android:angle="270"
+                        android:startColor="#99FFFFFF"
+                        android:endColor="#10FFFFFF" />
+                    <corners
+                        android:topLeftRadius="20dp"
+                        android:topRightRadius="20dp"
+                        android:bottomLeftRadius="0dp"
+                        android:bottomRightRadius="0dp" />
+                </shape>
+            </item>
+        </layer-list>
     </item>
-    <!-- Reorder button while reorder mode is on (focus is on the tiles then). -->
     <item android:state_activated="true">
         <shape android:shape="rectangle">
-            <solid android:color="#596EC1FF" />
-            <stroke android:width="1.5dp" android:color="#FF6EC1FF" />
+            <gradient
+                android:angle="270"
+                android:startColor="#8000E5FF"
+                android:endColor="#4000C8FF" />
+            <stroke android:width="1.5dp" android:color="#FF00E5FF" />
             <corners android:radius="21dp" />
         </shape>
     </item>
     <item>
-        <shape android:shape="rectangle">
-            <gradient android:angle="270" android:startColor="#2EFFFFFF" android:endColor="#14FFFFFF" />
-            <stroke android:width="1dp" android:color="#38FFFFFF" />
-            <corners android:radius="21dp" />
-        </shape>
+        <layer-list>
+            <!-- Translucent deep frosted backing for contrast -->
+            <item>
+                <shape android:shape="rectangle">
+                    <solid android:color="#590A1624" />
+                    <corners android:radius="21dp" />
+                </shape>
+            </item>
+            <!-- Beveled glass sheen and stroke -->
+            <item>
+                <shape android:shape="rectangle">
+                    <gradient
+                        android:angle="270"
+                        android:startColor="#50FFFFFF"
+                        android:endColor="#15FFFFFF" />
+                    <stroke android:width="1.2dp" android:color="#66FFFFFF" />
+                    <corners android:radius="21dp" />
+                </shape>
+            </item>
+            <item android:bottom="20dp">
+                <shape android:shape="rectangle">
+                    <gradient
+                        android:angle="270"
+                        android:startColor="#70FFFFFF"
+                        android:endColor="#08FFFFFF" />
+                    <corners
+                        android:topLeftRadius="20dp"
+                        android:topRightRadius="20dp"
+                        android:bottomLeftRadius="0dp"
+                        android:bottomRightRadius="0dp" />
+                </shape>
+            </item>
+        </layer-list>
     </item>
 </selector>
